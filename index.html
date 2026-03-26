@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="💪 GH Personal">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="./icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./icon-512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png">
+    <link rel="shortcut icon" href="./icon-192.png">
+    <title>💪 GH Personal - Dailza Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-info">
+                <div class="app-icon">💪</div>
+                <div class="app-title">GH Personal</div>
+                <div class="user-name">Dailza Training</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="progress-section">
+                <p class="progress-text">Progresso: <span id="progress-count">0</span>/<span id="total-count">0</span></p>
+            </div>
+            
+            <div class="weekly-progress">
+                <div class="week-buttons">
+                    <button class="history-btn" onclick="showHistory()">📅 Histórico</button>
+                    <button class="reset-week-btn" onclick="resetWeek()">🗓️ Nova Semana</button>
+                </div>
+                <div class="week-days">
+                    <div class="day-box" data-day="1">S</div>
+                    <div class="day-box" data-day="2">T</div>
+                    <div class="day-box" data-day="3">Q</div>
+                    <div class="day-box" data-day="4">Q</div>
+                    <div class="day-box" data-day="5">S</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Menu Principal no Topo -->
+            <nav class="top-nav">
+                <button class="top-nav-btn active" onclick="showSection('workout')">
+                    <span class="nav-icon">💪</span>
+                    <span class="nav-label">Treino</span>
+                </button>
+                <button class="top-nav-btn" onclick="showSection('nutrition')">
+                    <span class="nav-icon">🥗</span>
+                    <span class="nav-label">Dieta</span>
+                </button>
+                <button class="top-nav-btn" onclick="showSection('supplements')">
+                    <span class="nav-icon">💊</span>
+                    <span class="nav-label">Suplementos</span>
+                </button>
+                <button class="top-nav-btn" onclick="showSection('schedule')">
+                    <span class="nav-icon">⏰</span>
+                    <span class="nav-label">Horários</span>
+                </button>
+            </nav>
+
+            <div class="workout-days-section">
+                <span style="font-size: 12px; font-weight: bold; color: #333; margin-bottom: 8px; display: block;">Dias de Treino</span>
+                <div class="workout-days">
+                    <div class="workout-day-box active" onclick="showDay(1)">SEG</div>
+                    <div class="workout-day-box" onclick="showDay(2)">TER</div>
+                    <div class="workout-day-box" onclick="showDay(3)">QUA</div>
+                    <div class="workout-day-box" onclick="showDay(4)">QUI</div>
+                    <div class="workout-day-box" onclick="showDay(5)">SEX</div>
+                </div>
+            </div>
+
+            <!-- Seção de Treinos -->
+            <div id="workout-section" class="section active">
+                <div class="workout-day" id="workout-container">
+                    <!-- Exercícios serão carregados aqui -->
+                </div>
+            </div>
+
+            <!-- Seção de Nutrição ATUALIZADA -->
+<div id="nutrition-section" class="section">
+    <div class="nutrition-content">
+        <div class="info-card">
+            <h3>🧠 Regras Gerais</h3>
+            <ul>
+                <li><strong>Calorias diárias:</strong> ~1.700 kcal (déficit moderado)</li>
+                <li><strong>Objetivo:</strong> Perda de gordura + hipertrofia (80kg → 75kg seca)</li>
+                <li><strong>Refeição livre:</strong> 1x/semana, com moderação</li>
+                <li><strong>Hidratação:</strong> 3-4L água/dia (mínimo)</li>
+                <li><strong>Permitidos:</strong> Adoçantes zero, chás, café (até 16h), gelatina zero</li>
+                <li><strong>Gordura preparo:</strong> Apenas spray ou azeite (1 colher de chá)</li>
+                <li><strong>Sal:</strong> Moderado, até 5g/dia</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h3>🍳 1ª Refeição - Café da Manhã</h3>
+            <ul>
+                <li>Ovo (02 inteiros + 02 claras)</li>
+                <li>Pão integral (01 fatia) ou Tapioca (30g)</li>
+                <li>Queijo cottage ou mussarela light (01 fatia)</li>
+                <li>Café com ou sem adoçante</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h3>🍌 2ª Refeição - Lanche da Manhã</h3>
+            <p><strong>Escolher uma opção:</strong></p>
+            <ul>
+                <li>Iogurte natural zero (170g) + 1 fruta</li>
+                <li>Whey (1 dose) + 1 fruta</li>
+                <li>Frutas: Banana, Maçã, Pera (01) ou Morango/Melão (150g)</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h3>🍽️ 3ª Refeição - Almoço</h3>
+            <p><strong>Proteína (escolher 1):</strong></p>
+            <ul>
+                <li>Frango sem pele (180g)</li>
+                <li>Filé de peixe (200g)</li>
+                <li>Patinho/Alcatra magra (150g)</li>
+            </ul>
+            <p><strong>Carboidrato (escolher 1):</strong></p>
+            <ul>
+                <li>Arroz integral (80g cru) ou Batata doce (150g)</li>
+                <li>Feijão/Lentilha (3 colheres)</li>
+            </ul>
+            <ul>
+                <li>Salada verde à vontade + Legumes (200g)</li>
+                <li>Azeite (1 colher de chá na salada)</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h3>🥤 4ª Refeição - Lanche da Tarde</h3>
+            <p><strong>Escolher uma opção:</strong></p>
+            <ul>
+                <li><strong>Opção 1:</strong> Whey (1 dose) + Aveia (15g) + 1 fruta</li>
+                <li><strong>Opção 2:</strong> 2 ovos cozidos + 1 fruta</li>
+                <li><strong>Opção 3:</strong> Iogurte grego zero (170g) + granola (15g)</li>
+            </ul>
+        </div>
+
+        <div class="meal-card">
+            <h3>🌙 5ª Refeição - Jantar</h3>
+            <p><strong>Proteína (escolher 1):</strong></p>
+            <ul>
+                <li>Frango sem pele (180g)</li>
+                <li>Filé de peixe (200g)</li>
+                <li>Omelete (3 claras + 1 inteiro)</li>
+            </ul>
+            <ul>
+                <li>Legumes refogados (200g) + Salada verde à vontade</li>
+            </ul>
+            <p><em>*Evitar carboidrato pesado à noite para melhor resultado.</em></p>
+        </div>
+
+        <div class="info-card">
+            <h3>🍽️ Ordem de Consumo</h3>
+            <ol>
+                <li><strong>1º Salada:</strong> Fibras que auxiliam na saciedade</li>
+                <li><strong>2º Legumes:</strong> Vitaminas e minerais</li>
+                <li><strong>3º Proteínas:</strong> Saciedade prolongada</li>
+                <li><strong>4º Carboidratos:</strong> Energia controlada</li>
+            </ol>
+        </div>
+
+        <div class="info-card">
+            <h3>🏃‍♀️ Aeróbicos</h3>
+            <ul>
+                <li><strong>Frequência:</strong> 5x na semana</li>
+                <li><strong>Duração:</strong> 30-40 min (pós treino ou turno alternado)</li>
+                <li><strong>Tipo:</strong> Caminhada inclinada, bike ou elíptico</li>
+                <li><strong>Intensidade:</strong> FC 120-130 bpm (conseguir falar com dificuldade)</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>😴 Sono</h3>
+            <ul>
+                <li>Dormir no mínimo 7-8h por noite</li>
+                <li>Rotina fixa de horário</li>
+                <li>Sem telas 1h antes de dormir</li>
+                <li>Ambiente escuro e fresco</li>
+            </ul>
+            <p><em>*Sono ruim aumenta cortisol e dificulta perda de gordura na mulher.</em></p>
+        </div>
+    </div>
+</div>
+
+<div id="supplements-section" class="section">
+    <div class="supplements-content">
+        <div class="supplement-time">
+            <h3>🌅 Ao Acordar</h3>
+            <ul>
+                <li>1 copo de água com limão (200ml)</li>
+            </ul>
+        </div>
+
+        <div class="supplement-time">
+            <h3>🍳 Pós-Café da Manhã</h3>
+            <ul>
+                <li>Ômega 3 – 1000mg (1 cápsula)</li>
+                <li>Vitamina D3 – 2000 UI</li>
+                <li>Creatina – 3g (pode misturar no café ou suco)</li>
+            </ul>
+        </div>
+
+        <div class="supplement-time">
+            <h3>💪 Pré-Treino (30min antes)</h3>
+            <ul>
+                <li>Café preto ou chá verde (estimulante natural)</li>
+                <li>Beta-alanina 1g (opcional)</li>
+            </ul>
+        </div>
+
+        <div class="supplement-time">
+            <h3>🥤 Pós-Treino</h3>
+            <ul>
+                <li>Whey Protein Isolado – 1 dose (30g)</li>
+            </ul>
+            <p><em>*Whey isolado tem menos lactose e gordura, ideal para emagrecimento.</em></p>
+        </div>
+
+        <div class="supplement-time">
+            <h3>🌙 Antes de Dormir</h3>
+            <ul>
+                <li>Magnésio Quelato – 300mg (relaxamento e sono)</li>
+                <li>Chá de camomila ou passiflora</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>🌸 Suporte Hormonal Feminino Natural</h3>
+            <ul>
+                <li><strong>Maca Peruana:</strong> 500mg/dia – equilíbrio hormonal e energia</li>
+                <li><strong>Vitex (Agnus Castus):</strong> 400mg/dia – regula ciclo e TPM</li>
+                <li><strong>Zinco:</strong> 15mg/dia – suporte à tireoide e hormônios</li>
+                <li><strong>Selênio:</strong> 50mcg/dia – tireoide e antioxidante</li>
+                <li><strong>Vitamina B6:</strong> 50mg/dia – metabolismo hormonal</li>
+            </ul>
+            <p><em>*Esses suplementos ajudam no equilíbrio hormonal natural da mulher, facilitando emagrecimento e ganho muscular.</em></p>
+        </div>
+
+        <div class="info-card">
+            <h3>📋 Resumo Diário</h3>
+            <ul>
+                <li>☀️ Manhã: Ômega 3 + Vit D3 + Creatina</li>
+                <li>💪 Pré-treino: Café/chá verde</li>
+                <li>🥤 Pós-treino: Whey Isolado</li>
+                <li>🌙 Noite: Magnésio + Chá</li>
+                <li>📅 Diário: Maca + Vitex + Zinco + Selênio + B6</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <!-- Seção de Horários -->
+            <div id="schedule-section" class="section">
+                <div class="schedule-content">
+                    <div class="info-card">
+                        <h3>⚠️ Importante - Alarmes no iOS</h3>
+                        <p style="font-size: 11px; line-height: 1.4; margin-bottom: 8px;">
+                            <strong>Limitação:</strong> PWAs no iOS não funcionam em background. 
+                            Os alarmes abaixo são apenas referência.
+                        </p>
+                        <p style="font-size: 11px; line-height: 1.4; color: #4CAF50;">
+                            <strong>Solução:</strong> Configure alarmes reais no app Relógio do iOS 
+                            usando os horários abaixo como referência.
+                        </p>
+                        <button onclick="showIOSInstructions()" style="
+                            background: linear-gradient(135deg, #4CAF50, #45a049);
+                            color: white;
+                            border: none;
+                            padding: 6px 12px;
+                            border-radius: 8px;
+                            font-size: 10px;
+                            margin-top: 8px;
+                            cursor: pointer;
+                        ">📱 Como Configurar no iOS</button>
+                    </div>
+
+                    <div class="alarm-card">
+                        <h3>⏰ Horários de Referência</h3>
+                        <div class="alarm-list" id="alarm-list">
+                            <!-- Alarmes serão carregados aqui -->
+                        </div>
+                        <button class="add-alarm-btn" onclick="showAlarmModal()">+ Adicionar Horário</button>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🏃‍♀️ Aeróbicos</h3>
+                        <ul>
+                            <li>5x na semana (30 min)</li>
+                            <li>Pós-treino ou turno alternado</li>
+                            <li>FC: 120 bpm (com ofegância)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>😴 Sono</h3>
+                        <ul>
+                            <li>Mínimo 7h por noite</li>
+                            <li>Rotina fixa</li>
+                            <li>Sem telas 1h antes</li>
+                            <li>Ambiente escuro e silencioso</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🦷 Higiene Bucal</h3>
+                        <ul>
+                            <li>Escovar após todas refeições</li>
+                            <li>Limpador de língua diário</li>
+                            <li>Enxaguante sem álcool (2x/dia)</li>
+                            <li>Frutas cítricas para paladar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="video-modal" class="timer-modal hidden">
+            <div class="video-content">
+                <button onclick="closeVideo()" class="close-video">✕</button>
+                <video id="video-player" controls style="width: 100%; height: 100%; display: none;">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen loading="eager"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+        </div>
+
+        <div id="timer-modal" class="timer-modal hidden">
+            <div class="timer-content">
+                <button onclick="closeTimer()" class="close-timer">✕</button>
+                <div class="timer-display" id="timer-display">00:00</div>
+                <div class="timer-label">Tempo de descanso</div>
+            </div>
+        </div>
+
+        <div id="history-modal" class="timer-modal hidden">
+            <div class="history-content">
+                <button onclick="closeHistory()" class="close-history">✕</button>
+                <h3>📅 Histórico de Treinos</h3>
+                <div id="history-list"></div>
+                <button class="clear-history-btn" onclick="clearHistory()">🗑️ Limpar Histórico</button>
+            </div>
+        </div>
+
+        <div id="alarm-modal" class="timer-modal hidden">
+            <div class="alarm-modal-content">
+                <h3>⏰ Adicionar Alarme</h3>
+                <div class="alarm-form">
+                    <label>Horário:</label>
+                    <input type="time" id="alarm-time" required>
+                    
+                    <label>Descrição:</label>
+                    <input type="text" id="alarm-description" placeholder="Ex: Tomar suplementos" required>
+                    
+                    <label>Repetir:</label>
+                    <select id="alarm-repeat">
+                        <option value="daily">Todos os dias</option>
+                        <option value="weekdays">Dias úteis</option>
+                        <option value="weekends">Fins de semana</option>
+                        <option value="once">Uma vez</option>
+                    </select>
+                    
+                    <div class="alarm-buttons">
+                        <button onclick="saveAlarm()" class="save-alarm">Salvar</button>
+                        <button onclick="closeAlarmModal()" class="cancel-alarm">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="workout-data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/workout.js"></script>
+    <script src="js/alarms.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
