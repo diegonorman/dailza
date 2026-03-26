@@ -117,7 +117,7 @@ const WORKOUT_DATA = {
         "sets": "3x30-45 seg (frontal) + 2x20-30 seg (cada lado)",
         "rest": "30 seg",
         "details": "Isométrico define cintura sem engrossar. Melhor que abdominal com carga pra visual feminino de cintura fina.",
-        "video": ""
+        "video": "https://www.youtube.com/shorts/ypA5NH4hqTU | https://www.youtube.com/shorts/lpWyu0jI9AU"
       }
     ]
   },
@@ -239,7 +239,7 @@ const WORKOUT_DATA = {
         "sets": "3x12-15 (cada perna)",
         "rest": "60 seg",
         "details": "Isolamento puro de glúteo máximo. Apertar forte no topo. Progressão de carga.",
-        "video": ""
+        "video": "https://www.youtube.com/shorts/ToE6yT5pHZ0"
       },
       {
         "name": "CADEIRA ABDUTORA",
@@ -321,7 +321,7 @@ const WORKOUT_DATA = {
         "sets": "3x30-45 seg (frontal) + 2x20-30 seg (cada lado)",
         "rest": "30 seg",
         "details": "Isométrico define cintura sem engrossar. Melhor que abdominal com carga pra visual feminino de cintura fina.",
-        "video": ""
+        "video": "https://www.youtube.com/shorts/ypA5NH4hqTU | https://www.youtube.com/shorts/lpWyu0jI9AU"
       }
     ]
   }
