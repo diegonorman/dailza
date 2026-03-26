@@ -92,18 +92,11 @@ const WORKOUT_DATA = {
         "video": "https://www.youtube.com/shorts/acC6hFJuQPU"
       },
       {
-        "name": "CRUCIFIXO INCLINADO NO CROSS",
+        "name": "CROSSOVER",
         "sets": "3x12-15",
         "rest": "60 seg",
-        "details": "1 seg isometria. Abrir bem. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/FteHJQw0KeU"
-      },
-      {
-        "name": "ABDOMINAL NO BANCO DECLINADO",
-        "sets": "4x15-20",
-        "rest": "45 seg",
-        "details": "Contrair forte. Sem impulso.",
-        "video": "https://www.youtube.com/shorts/QFw8z8c0VhY"
+        "details": "Polia alta, cruzar na frente. Mais acessível que crucifixo no cross. Progressão de carga.",
+        "video": "https://www.youtube.com/shorts/poe7X02U2qw"
       },
       {
         "name": "PRANCHA FRONTAL + LATERAL",
@@ -143,7 +136,7 @@ const WORKOUT_DATA = {
         "sets": "4x10-12",
         "rest": "60 seg",
         "details": "Pegada aberta, mãos viradas pra fora. Foco no dorsal superior = V das costas = cintura fina. Progressão de carga.",
-        "video": ""
+        "video": "https://www.youtube.com/shorts/epbnBUzjJ2U"
       },
       {
         "name": "CRUCIFIXO INVERTIDO NO VOADOR",
@@ -294,13 +287,6 @@ const WORKOUT_DATA = {
         "rest": "60 seg",
         "details": "Progressão de carga.",
         "video": "https://www.youtube.com/shorts/dMYGgTbtRIQ"
-      },
-      {
-        "name": "ABDOMINAL NO BANCO DECLINADO",
-        "sets": "4x15-20",
-        "rest": "45 seg",
-        "details": "Segundo estímulo semanal de abdômen.",
-        "video": "https://www.youtube.com/shorts/QFw8z8c0VhY"
       },
       {
         "name": "PRANCHA FRONTAL + LATERAL",
