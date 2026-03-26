@@ -35,7 +35,7 @@ const WORKOUT_DATA = {
         "sets": "4x10-12 (cada perna)",
         "rest": "60 seg",
         "details": "Pé de trás no banco. Descer até joelho quase tocar o chão. Ativa 40% mais glúteo que agachamento normal. Progressão de carga.",
-        "video": ""
+        "video": "https://www.youtube.com/shorts/VydfMkXWmlQ"
       },
       {
         "name": "LEG PRESS",
