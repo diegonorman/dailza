@@ -78,13 +78,6 @@ const WORKOUT_DATA = {
         "video": "https://www.youtube.com/shorts/3ml7BhbddP0"
       },
       {
-        "name": "ELEVAÇÃO LATERAL PARCIAL NA POLIA",
-        "sets": "3x12-15",
-        "rest": "60 seg",
-        "details": "Tensão constante. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/dgpts8LHOLc"
-      },
-      {
         "name": "SUPINO INCLINADO ARTICULADO OU NA MÁQUINA",
         "sets": "3x12-15",
         "rest": "60 seg",
@@ -97,6 +90,13 @@ const WORKOUT_DATA = {
         "rest": "60 seg",
         "details": "Apertar no centro. Máquina simples e eficiente. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/JbDATt09ObA"
+      },
+      {
+        "name": "ELEVAÇÃO DE PERNAS DEITADA",
+        "sets": "3x15-20",
+        "rest": "30 seg",
+        "details": "Abdômen inferior. Deitar no chão ou banco, subir as pernas sem balançar. Descer devagar.",
+        "video": "https://www.youtube.com/watch?v=_VHKegqk6O0"
       },
       {
         "name": "PRANCHA FRONTAL + LATERAL",
