@@ -139,11 +139,11 @@ const WORKOUT_DATA = {
         "video": "https://www.youtube.com/shorts/kVqE5pZvhI8"
       },
       {
-        "name": "REMADA ABERTA PRONADA MÁQUINA",
+        "name": "PUXADA PRONADA ABERTA",
         "sets": "4x10-12",
         "rest": "60 seg",
-        "details": "1 seg isometria. Cotovelos altos. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/r4EmE8I74BQ"
+        "details": "Pegada aberta, mãos viradas pra fora. Foco no dorsal superior = V das costas = cintura fina. Progressão de carga.",
+        "video": ""
       },
       {
         "name": "CRUCIFIXO INVERTIDO NO VOADOR",
