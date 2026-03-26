@@ -50,13 +50,6 @@ const WORKOUT_DATA = {
         "rest": "60 seg",
         "details": "1 seg isometria no topo. Definição do quadríceps. Progressão de carga.",
         "video": "https://youtube.com/shorts/lMuTTuTn25U"
-      },
-      {
-        "name": "AGACHAMENTO HACK",
-        "sets": "3x12-15",
-        "rest": "90 seg",
-        "details": "Foco em quadríceps. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/Zw8kGqE5pZv"
       }
     ]
   },
@@ -226,13 +219,6 @@ const WORKOUT_DATA = {
         "rest": "90 seg",
         "details": "Pés abertos, joelhos pra fora. Glúteo + posterior. 1 seg isometria. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/m6IIorkQe8E"
-      },
-      {
-        "name": "CADEIRA ADUTORA",
-        "sets": "4x12-15",
-        "rest": "60 seg",
-        "details": "1 seg isometria. Interno da coxa. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/TB4BwvHaK9o"
       },
       {
         "name": "KICKBACK NA POLIA (COICE NO CABO)",
