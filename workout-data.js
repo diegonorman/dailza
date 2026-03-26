@@ -92,11 +92,11 @@ const WORKOUT_DATA = {
         "video": "https://www.youtube.com/shorts/acC6hFJuQPU"
       },
       {
-        "name": "CROSSOVER",
+        "name": "VOADOR (PECK DECK)",
         "sets": "3x12-15",
         "rest": "60 seg",
-        "details": "Polia alta, cruzar na frente. Mais acessível que crucifixo no cross. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/poe7X02U2qw"
+        "details": "Apertar no centro. Máquina simples e eficiente. Progressão de carga.",
+        "video": "https://www.youtube.com/shorts/JbDATt09ObA"
       },
       {
         "name": "PRANCHA FRONTAL + LATERAL",
@@ -151,13 +151,6 @@ const WORKOUT_DATA = {
         "rest": "60 seg",
         "details": "Controlar a descida. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/x6JCKfdzPJE"
-      },
-      {
-        "name": "ROSCA DIRETA NA PUXADA ALTA (POLIA ALTA)",
-        "sets": "3x12-15",
-        "rest": "60 seg",
-        "details": "1 seg isometria. Progressão de carga.",
-        "video": "https://www.youtube.com/shorts/2nv_TyYP7L0"
       }
     ]
   },
@@ -224,7 +217,7 @@ const WORKOUT_DATA = {
         "name": "CADEIRA ABDUTORA",
         "sets": "4x15-20",
         "rest": "60 seg",
-        "details": "Burnout final. Glúteo médio. Progressão de carga.",
+        "details": "BURNOUT = último exercício do dia, fazer até não aguentar mais. Repetições altas com carga moderada pra esgotar o glúteo por completo. Progressão de carga.",
         "video": "https://youtube.com/shorts/ehJD5TaEdXw"
       }
     ]
