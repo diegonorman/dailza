@@ -11,7 +11,7 @@ const WORKOUT_DATA = {
       },
       {
         "name": "CADEIRA ABDUTORA",
-        "sets": "4x15",
+        "sets": "3x15",
         "rest": "60 seg",
         "details": "2 seg isometria. Ativar glúteo médio antes do treino pesado.",
         "video": "https://youtube.com/shorts/ehJD5TaEdXw"
@@ -25,28 +25,28 @@ const WORKOUT_DATA = {
       },
       {
         "name": "AGACHAMENTO SMITH",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "90 seg",
         "details": "Descer até paralelo. Pés levemente à frente pra ativar mais glúteo. Progressão de carga.",
         "video": "https://youtube.com/shorts/ZSLSanHSuf0"
       },
       {
         "name": "AGACHAMENTO BÚLGARO NO SMITH",
-        "sets": "4x10-12 (cada perna)",
+        "sets": "3x10-12 (cada perna)",
         "rest": "60 seg",
         "details": "Pé de trás no banco. Descer até joelho quase tocar o chão. Ativa 40% mais glúteo que agachamento normal. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/VydfMkXWmlQ"
       },
       {
         "name": "LEG PRESS",
-        "sets": "4x12-15",
+        "sets": "3x12-15",
         "rest": "90 seg",
         "details": "Pés altos e abertos na plataforma = mais glúteo. Progressão de carga.",
         "video": "https://youtube.com/shorts/d1W2YnVMtJs"
       },
       {
         "name": "CADEIRA EXTENSORA",
-        "sets": "4x12-15",
+        "sets": "3x12-15",
         "rest": "60 seg",
         "details": "1 seg isometria no topo. Definição do quadríceps. Progressão de carga.",
         "video": "https://youtube.com/shorts/lMuTTuTn25U"
@@ -65,14 +65,14 @@ const WORKOUT_DATA = {
       },
       {
         "name": "DESENVOLVIMENTO COM HALTERES",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Foco no deltóide. Ombro arredondado = visual ampulheta. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/Gy6LpKErBT8"
       },
       {
         "name": "ELEVAÇÃO LATERAL EM PÉ",
-        "sets": "4x12-15",
+        "sets": "3x12-15",
         "rest": "60 seg",
         "details": "Controlar a descida. Deltóide lateral dá largura ao ombro. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/3ml7BhbddP0"
@@ -119,28 +119,28 @@ const WORKOUT_DATA = {
       },
       {
         "name": "PUXADA ALTA SUPINADA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Puxar com as costas. Costas largas = cintura fina visualmente. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/b5RkrNs_EGM"
       },
       {
         "name": "REMADA TRIÂNGULO MÁQUINA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Apertar escápulas no final. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/kVqE5pZvhI8"
       },
       {
         "name": "PUXADA PRONADA ABERTA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Pegada aberta, mãos viradas pra fora. Foco no dorsal superior = V das costas = cintura fina. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/epbnBUzjJ2U"
       },
       {
         "name": "CRUCIFIXO INVERTIDO NO VOADOR",
-        "sets": "4x12-15",
+        "sets": "3x12-15",
         "rest": "60 seg",
         "details": "Cotovelos altos. Deltóide posterior + costas. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/wUT3hmnzq3c"
@@ -180,28 +180,28 @@ const WORKOUT_DATA = {
       },
       {
         "name": "MESA FLEXORA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Tronco levantado. Foco no posterior. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/IXg1PQ_5gmw"
       },
       {
         "name": "STIFF COM BARRA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Sentir alongar o posterior. Calcanhar para dentro. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/6PWws7e_z-s"
       },
       {
         "name": "CADEIRA FLEXORA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Calcanhar para dentro. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/T46yKiz8laY"
       },
       {
         "name": "TERRA SUMÔ",
-        "sets": "4x8-10",
+        "sets": "3x8-10",
         "rest": "90 seg",
         "details": "Pés abertos, joelhos pra fora. Glúteo + posterior. 1 seg isometria. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/m6IIorkQe8E"
@@ -215,7 +215,7 @@ const WORKOUT_DATA = {
       },
       {
         "name": "CADEIRA ABDUTORA",
-        "sets": "4x15-20",
+        "sets": "3x15-20",
         "rest": "60 seg",
         "details": "BURNOUT = último exercício do dia, fazer até não aguentar mais. Repetições altas com carga moderada pra esgotar o glúteo por completo. Progressão de carga.",
         "video": "https://youtube.com/shorts/ehJD5TaEdXw"
@@ -227,14 +227,14 @@ const WORKOUT_DATA = {
     "exercises": [
       {
         "name": "PANTURRILHA EM PÉ",
-        "sets": "4x15-20",
+        "sets": "3x15-20",
         "rest": "45 seg",
         "details": "Máxima amplitude. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/o1CyKLbUPAM"
       },
       {
         "name": "PANTURRILHA SENTADO",
-        "sets": "4x15-20",
+        "sets": "3x15-20",
         "rest": "45 seg",
         "details": "Máxima amplitude. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/9fIw0ue8iQE"
@@ -248,14 +248,14 @@ const WORKOUT_DATA = {
       },
       {
         "name": "DESENVOLVIMENTO COM HALTERES",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Segundo estímulo semanal de deltóide. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/Gy6LpKErBT8"
       },
       {
         "name": "ELEVAÇÃO LATERAL NO BANCO INCLINADO",
-        "sets": "4x12-15",
+        "sets": "3x12-15",
         "rest": "60 seg",
         "details": "Banco 45º. Amplitude parcial. Progressão de carga.",
         "video": "https://www.youtube.com/shorts/2a4yANFdNys"
@@ -269,7 +269,7 @@ const WORKOUT_DATA = {
       },
       {
         "name": "TRÍCEPS BARRA",
-        "sets": "4x10-12",
+        "sets": "3x10-12",
         "rest": "60 seg",
         "details": "Progressão de carga.",
         "video": "https://www.youtube.com/shorts/M88Bt4MMpkI"
